@@ -62,6 +62,8 @@ ROOT_URLCONF = 'config.urls'
 CORS_ALLOWED_ORIGINS=[
     "http://localhost:5173", # Vite's default local port
     "http://127.0.0.1:5173",
+    "https://teco-backend.onrender.com", # Allow the backend itself (for admin)
+    "https://tecof.netlify.app" 
 ]
 ALLOWED_HOSTS = ['*'] # Render will provide a specific URL, but '*' is fine for the initial setup.
 TEMPLATES = [
